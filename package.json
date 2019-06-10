@@ -8,8 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "build": "npm run build:node && npm run build:binary",
-    "build:node": "ncc build index.js -o dist",
-    "build:binary": "pkg ."
+    "build:node": "ncc build index.js -o node-build",
+    "build:binary": "pkg . -o hi-cat"
   },
   "author": "Bradley Gaynor <Bradmgaynor@gmail.com>",
   "license": "ISC",
